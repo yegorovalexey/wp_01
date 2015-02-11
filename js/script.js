@@ -5,3 +5,9 @@ function mute_head_video(){
 	}
 	$("video").prop('muted', muted); 
 }
+
+function scrollTopage_start(){
+    $.scrollTo("#page_start",1000);
+}
+
+
