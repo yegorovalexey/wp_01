@@ -25,9 +25,12 @@ $(document).ready(function() {
         userId: 256184017,
         clientId: ' 	4a355b525f874ae3ad2088254e83ed0c',
         accessToken: '1485681255.467ede5.bc5b3e9121034b358e422a1179eb52b0',
-        template: '<div class="np item"><a class="fancybox_insta" rel="group_insta" href="{{link}}"><img  src="{{image}}"></a></div>',
+        template: '<div class="np item"><a class="fancybox_insta" rel="group_insta" href="{{link}}"><img class="insta_img"  src="{{image}}"></a></div>',
         after: function() {
             $(".fancybox_insta").fancybox();
+			$(".insta_img").each(function(){
+				$(this).attr("src","http://" + $(this).attr("src").replace("//",""));
+			});
         }
     });
     feed.run();

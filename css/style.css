@@ -304,3 +304,19 @@ height:150px;
     display: block;
     float: left;
 }
+#instafeed {
+    height: 150px;
+    overflow: hidden;
+}
+#instafeed {
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin-left: -150px;
+    margin-right: -250px;
+}
+.feed_container{
+overflow: hidden;
+position: relative;
+top: 30px;
+}
